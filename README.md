@@ -26,12 +26,12 @@ If you want to run a new nodejs application
 pm2 start your_app.js --watch
 ```
 If you can see an application named your_app with a green "online" word in status column, it means your application run successfully.
-┌───────────┬──────┬────────┬────┬─────┬───────────┐
-│ Name      │ mode │ status │ ↺  │ cpu │ memory    │
-├───────────┼──────┼────────┼────┼─────┼───────────┤
-│ server    │ fork │ online │ 26 │ 0%  │ 4.5 MB    │
-│ webserver │ fork │ online │ 52 │ 0%  │ 73.3 MB   │
-└───────────┴──────┴────────┴────┴─────┴───────────┘
+┌───────────┬──────┬────────┬────┬─────┬───────────┐__
+│ Name      │ mode │ status │ ↺  │ cpu │ memory    │__
+├───────────┼──────┼────────┼────┼─────┼───────────┤__
+│ server    │ fork │ online │ 26 │ 0%  │ 4.5 MB    │__
+│ webserver │ fork │ online │ 52 │ 0%  │ 73.3 MB   │__
+└───────────┴──────┴────────┴────┴─────┴───────────┘__
 
 3. go to /etc/apache2/sites-available
 4. open beesite.conf
