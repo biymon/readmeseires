@@ -37,13 +37,13 @@ If you can see an application named your_app with a green 'online' word in 'stat
 4. open beesite.conf
    add the following lines after </Proxy>
   ```
-	ProxyPass /user_defined_path http://localhost:user_defined_port(your nodejs application used)
+	ProxyPass /user_defined_path http://localhost:user_defined_port(the port your nodejs application is using)
 	ProxyPassReverse /user_defined_path http://localhost:user_defined_port/user_defined_path
   ```
 5. save beesite.conf and test if the beesite.conf contains grammar and setting errors
-  ```
-  sudo apache2ctl configtest
-  ```
+ ```
+ sudo apache2ctl configtest
+ ```
 6. If there is no error happened in step 5, restart apache2.
 ```
 sudo service apache2 restart"
