@@ -49,4 +49,4 @@ If you can see an application named your_app with a green 'online' word in 'stat
 sudo service apache2 restart
 ```
 
-Try "http://beecology.wpi.edu/user_defined_path" to see if it is accessible.http://pm2.keymetrics.io/docs/usage/quick-start/
+Try "http://beecology.wpi.edu/user_defined_path" to see if it is accessible.
