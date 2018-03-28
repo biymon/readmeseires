@@ -3,6 +3,10 @@
 ```
 pm2 start your_app.js
 ```
+PM2 can automatically restart your application when a file is modified in the current directory or its subdirectories:
+```
+pm2 start your_app.js --watch
+```
 ## Restart an application 
 ```
 pm2 restart your_app.js
@@ -13,10 +17,12 @@ pm2 restart your_app.js
 pm2 stop your_app.js
 ```
 
-PM2 can automatically restart your application when a file is modified in the current directory or its subdirectories:
-```
-pm2 start your_app.js --watch
-```
+
+
+# PM2 Quick Start
+
+[http://pm2.keymetrics.io/docs/usage/quick-start/](http://pm2.keymetrics.io/docs/usage/quick-start/)
+
 
 # Steps of running nodejs application on Apache2  
 If you want to run a new nodejs application
@@ -25,13 +31,7 @@ If you want to run a new nodejs application
 ```
 pm2 start your_app.js --watch
 ```
-If you can see an application named your_app with a green "online" word in status column, it means your application run successfully.
-┌───────────┬──────┬────────┬────┬─────┬───────────┐__
-│ Name      │ mode │ status │ ↺  │ cpu │ memory    │__
-├───────────┼──────┼────────┼────┼─────┼───────────┤__
-│ server    │ fork │ online │ 26 │ 0%  │ 4.5 MB    │__
-│ webserver │ fork │ online │ 52 │ 0%  │ 73.3 MB   │__
-└───────────┴──────┴────────┴────┴─────┴───────────┘__
+If you can see an application named your_app with a green 'online' word in 'status' column, it means your application run successfully.
 
 3. go to /etc/apache2/sites-available
 4. open beesite.conf
@@ -40,7 +40,7 @@ If you can see an application named your_app with a green "online" word in statu
 	ProxyPass /user_defined_path http://localhost:user_defined_port(your nodejs application used)
 	ProxyPassReverse /user_defined_path http://localhost:user_defined_port/user_defined_path
   ```
-5. save beesite.conf and test if the beesite.conf contains grammar or setting errors
+5. save beesite.conf and test if the beesite.conf contains grammar and setting errors
   ```
   sudo apache2ctl configtest
   ```
