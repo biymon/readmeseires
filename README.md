@@ -29,7 +29,7 @@ If you can see an application named your_app with a green "online" word in statu
 ┌───────────┬──────┬────────┬────┬─────┬───────────┐
 │ Name      │ mode │ status │ ↺  │ cpu │ memory    │
 ├───────────┼──────┼────────┼────┼─────┼───────────┤
-│ server    │ fork │  <font color="green">online</font> │ 26 │ 0%  │ 4.5 MB    │
+│ server    │ fork │ online │ 26 │ 0%  │ 4.5 MB    │
 │ webserver │ fork │ online │ 52 │ 0%  │ 73.3 MB   │
 └───────────┴──────┴────────┴────┴─────┴───────────┘
 
