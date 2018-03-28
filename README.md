@@ -21,11 +21,17 @@ pm2 start your_app.js --watch
 # Steps of running nodejs application on Apache2  
 If you want to run a new nodejs application
 1. get the latest code at /var/www/html/rest/your_application_folder
-2. run the server with pm2
+2. run your application with pm2
 ```
 pm2 start your_app.js --watch
 ```
 If you can see an application named your_app with a green "online" word in status column, it means your application run successfully.
+┌───────────┬──────┬────────┬────┬─────┬───────────┐
+│ Name      │ mode │ status │ ↺  │ cpu │ memory    │
+├───────────┼──────┼────────┼────┼─────┼───────────┤
+│ server    │ fork │  <font color="green">online</font> │ 26 │ 0%  │ 4.5 MB    │
+│ webserver │ fork │ online │ 52 │ 0%  │ 73.3 MB   │
+└───────────┴──────┴────────┴────┴─────┴───────────┘
 
 3. go to /etc/apache2/sites-available
 4. open beesite.conf
