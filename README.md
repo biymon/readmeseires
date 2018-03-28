@@ -35,7 +35,7 @@ If you can see an application named your_app with a green 'online' word in 'stat
 
 3. go to /etc/apache2/sites-available
 4. open beesite.conf
-   add the following lines after </Proxy>
+   add the following lines after \</Proxy\>
   ```
 	ProxyPass /user_defined_path http://localhost:user_defined_port(the port your nodejs application is using)
 	ProxyPassReverse /user_defined_path http://localhost:user_defined_port/user_defined_path
@@ -46,7 +46,7 @@ If you can see an application named your_app with a green 'online' word in 'stat
  ```
 6. If there is no error happened in step 5, restart apache2.
 ```
-sudo service apache2 restart"
+sudo service apache2 restart
 ```
 
 Try "http://beecology.wpi.edu/user_defined_path" to see if it is accessible.http://pm2.keymetrics.io/docs/usage/quick-start/
